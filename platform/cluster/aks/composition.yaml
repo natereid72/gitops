@@ -16,6 +16,8 @@ spec:
           location: West US 2
           version: "1.21.2"
       patches:
+        - fromFieldPath: metadata.labels
+          toFieldPath: metadata.labels
         - fromFieldPath: spec.id
           toFieldPath: metadata.name
           transforms:
@@ -63,6 +65,8 @@ spec:
             secretRef:
               key: kubeconfig
       patches:
+        - fromFieldPath: metadata.labels
+          toFieldPath: metadata.labels
         - fromFieldPath: spec.id
           toFieldPath: metadata.name
         - fromFieldPath: spec.writeConnectionSecretToRef.namespace
