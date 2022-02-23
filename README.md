@@ -3,9 +3,9 @@
 
 /aks contains an example XR manifest to create an AKS cluster
 
-In a production model, these two directories would reside in separate repositories.
-
 /policy contains a simple example Gatekeeper config.
+
+In a production model, these three directories would reside in separate repositories.
 
 /argoapps contains application deifnitions for argoCD that consume the platform, aks, amd policy directories.
 
