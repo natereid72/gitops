@@ -4,6 +4,7 @@ metadata:
   name: xaks.azure.platformref.crossplane.io
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "3"
   labels:
     provider: azure
 spec:
