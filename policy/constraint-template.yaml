@@ -3,6 +3,7 @@ kind: ConstraintTemplate
 metadata:
   name: clusternodesize
   annotations:
+    argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/sync-wave: "0"
 spec:
   crd:
