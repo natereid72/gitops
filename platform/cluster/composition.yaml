@@ -4,6 +4,7 @@ metadata:
   name: xclusters.azure.platformref.crossplane.io
   annotations:
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
+    argocd.argoproj.io/sync-wave: "3"
 spec:
   compositeTypeRef:
     apiVersion: azure.platformref.crossplane.io/v1alpha1
