@@ -3,6 +3,7 @@ kind: Composition
 metadata:
   name: xpostgresqlinstances.azure.platformref.crossplane.io
   annotations:
+    argocd.argoproj.io/sync-wave: "3"
     argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
   labels:
     provider: azure
