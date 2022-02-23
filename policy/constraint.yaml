@@ -4,8 +4,6 @@ metadata:
   name: dev-clusternodesize
   annotations:
     argocd.argoproj.io/sync-wave: "1"
-  labels:
-    argocd.argoproj.io/sync-wave: "1"
 spec:
   match:
     namespaces:
