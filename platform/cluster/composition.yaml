@@ -2,6 +2,8 @@ apiVersion: apiextensions.crossplane.io/v1
 kind: Composition
 metadata:
   name: xclusters.azure.platformref.crossplane.io
+  annotations:
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   compositeTypeRef:
     apiVersion: azure.platformref.crossplane.io/v1alpha1
