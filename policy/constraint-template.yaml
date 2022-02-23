@@ -4,6 +4,8 @@ metadata:
   name: clusternodesize
   annotations:
     argocd.argoproj.io/sync-wave: "0"
+  labels:
+    argocd.argoproj.io/sync-wave: "0"
 spec:
   crd:
     spec:
