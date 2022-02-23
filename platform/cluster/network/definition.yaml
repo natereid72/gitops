@@ -3,6 +3,7 @@ kind: CompositeResourceDefinition
 metadata:
   name: xnetworks.azure.platformref.crossplane.io
   annotations:
+    argocd.argoproj.io/sync-wave: "-1"
     upbound.io/ui-schema: |-
       ---
       configSections:
