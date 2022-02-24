@@ -21,11 +21,11 @@ spec:
       - Validate=false
       - RespectIgnoreDifferences=true
     retry:
-      limit: 2
+      limit: 4
       backoff:
         duration: 3m
         factor: 2
-        maxDuration: 15m0s   
+        maxDuration: 20m0s   
   ignoreDifferences:
   - group: "rbac.authorization.k8s.io"
     kind: "ClusterRole"
