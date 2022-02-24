@@ -1,4 +1,9 @@
 # Base Example of Crossplane Repo for Argo CD
+
+This repo will configure Argo CD to install Crossplane and Gatekeeper into the cluster Argo CD is running in. Secondly, it installs a Crossplane configuration for Azure Cloud that defines XRDs and Composition to deploy an AKS cluster. It then makes an Azure Cloud config (`aks-cluster`) available for creation of the AKS cluster.
+
+For MacOS only, you can use the shell script file locates here to automate the process.
+
 /platform contains the XRD, Composition, and Provider configs.
 
 /aks contains an example XR manifest to create an AKS cluster
@@ -7,7 +12,7 @@
 
 In a production model, these three directories would reside in separate repositories.
 
-/argoapps contains application deifnitions for argoCD that consume the platform, aks, amd policy directories.
+/argoapps contains application deifnitions for argoCD to install Crossplane UXP and Gatekeepr, with additional apps that consume the platform, aks, amd policy directories.
 
 [Blog post that provides some background on this repo](https://vrelevant.net/crossplane-and-gitops-lets-get-to-the-good-stuff/)
 
