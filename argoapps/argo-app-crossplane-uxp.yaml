@@ -23,9 +23,9 @@ spec:
     retry:
       limit: 2
       backoff:
-        duration: 1m
+        duration: 3m
         factor: 2
-        maxDuration: 3m0s   
+        maxDuration: 15m0s   
   ignoreDifferences:
   - group: "rbac.authorization.k8s.io"
     kind: "ClusterRole"
