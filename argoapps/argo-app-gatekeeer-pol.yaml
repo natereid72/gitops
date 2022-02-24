@@ -16,6 +16,7 @@ spec:
     repoURL: https://github.com/natereid72/gitops.git
     targetRevision: HEAD
   syncPolicy:
+    automated: {}
     syncOptions:
       - Validate=false
       - ApplyOutOfSyncOnly=true
