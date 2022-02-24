@@ -27,8 +27,9 @@ spec:
         factor: 2
         maxDuration: 3m0s   
   ignoreDifferences:
-  - group: "apps"
-    kind: "Deployment"
+  - group: "rbac.authorization.k8s.io"
+    kind: "ClusterRole"
+    name: crossplane
     jsonPointers:
     - /rules
 
