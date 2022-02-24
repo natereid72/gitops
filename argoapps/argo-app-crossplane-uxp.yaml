@@ -23,7 +23,7 @@ spec:
     retry:
       limit: 2
       backoff:
-        duration: 5s
+        duration: 1m
         factor: 2
         maxDuration: 3m0s   
   ignoreDifferences:
