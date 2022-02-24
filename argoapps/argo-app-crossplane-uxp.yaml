@@ -19,6 +19,14 @@ spec:
       - CreateNamespace=true
       - ApplyOutOfSyncOnly=true
       - Validate=false
+      - RespectIgnoreDifferences=true
+      
+  ignoreDifferences:
+  - group: "apps"
+    kind: "Deployment"
+    jsonPointers:
+    - /rules
+
     retry:
       limit: 2
       backoff:
