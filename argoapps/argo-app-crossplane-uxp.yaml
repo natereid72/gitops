@@ -20,16 +20,16 @@ spec:
       - ApplyOutOfSyncOnly=true
       - Validate=false
       - RespectIgnoreDifferences=true
-      
+      retry:
+      limit: 2
+      backoff:
+        duration: 5s
+        factor: 2
+        maxDuration: 3m0s     
   ignoreDifferences:
   - group: "apps"
     kind: "Deployment"
     jsonPointers:
     - /rules
 
-    retry:
-      limit: 2
-      backoff:
-        duration: 5s
-        factor: 2
-        maxDuration: 3m0s
+    
