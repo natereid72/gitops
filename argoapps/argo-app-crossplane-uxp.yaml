@@ -20,12 +20,12 @@ spec:
       - ApplyOutOfSyncOnly=true
       - Validate=false
       - RespectIgnoreDifferences=true
-      retry:
+    retry:
       limit: 2
       backoff:
         duration: 5s
         factor: 2
-        maxDuration: 3m0s     
+        maxDuration: 3m0s   
   ignoreDifferences:
   - group: "apps"
     kind: "Deployment"
