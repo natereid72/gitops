@@ -2,7 +2,7 @@
 
 This repo will configure Argo CD to install Crossplane and Gatekeeper into the cluster Argo CD is running in. Secondly, it installs a Crossplane configuration for Azure Cloud that defines XRDs and Composition to deploy an AKS cluster. It then makes an Azure Cloud config (`aks-cluster`) available for creation of the AKS cluster.
 
-For MacOS only, you can use the shell script file locates [here](https://github.com/natereid72/cp-k8sScripts/blob/1e2a08f0061db3b69d2b3f203e33d9d86842b3b6/argoCD.sh) to automate the process.
+For MacOS only, you can use the shell script file locates [here](https://github.com/natereid72/cp-k8sScripts/blob/main/argo-cp-all-in-one.sh) to automate the process.
 
 /platform contains the XRD, Composition, and Provider configs.
 
