@@ -8,6 +8,8 @@ For MacOS only, you can use the shell script file located [here](https://github.
 
 /aks contains an example XR manifest to create an AKS cluster
 
+  * You can configure the Argo CD aks-cluster Applicaiton to use aks/xrc or aks/xr to see the difference between starting with an XRC or XR (default aks/xr)
+
 /policy contains a simple example Gatekeeper config.
 
 In a production model, these three directories would reside in separate repositories.
