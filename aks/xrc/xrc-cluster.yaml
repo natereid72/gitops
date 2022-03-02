@@ -1,8 +1,6 @@
 apiVersion: azure.platformref.crossplane.io/v1alpha1
 kind: Cluster
 metadata:
-  annotations:
-    argocd.argoproj.io/compare-options: IgnoreExtraneous
   name: platform-ref-azure
   namespace: dev
 spec:
