@@ -3,8 +3,6 @@ kind: Cluster
 metadata:
   name: platform-ref-azure
   namespace: dev
-  labels:
-    app.kubernetes.io/instance:
 spec:
   id: nate-platform-ref-azure
   parameters:
