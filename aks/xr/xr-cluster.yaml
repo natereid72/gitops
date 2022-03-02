@@ -2,8 +2,6 @@
 apiVersion: azure.platformref.crossplane.io/v1alpha1
 kind: XCluster
 metadata:
-  annotations:
-    argocd.argoproj.io/compare-options: IgnoreExtraneous
   name: nate-platform-ref-azure
 spec:
   id: nate-platform-ref-azure
