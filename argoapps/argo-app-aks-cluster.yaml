@@ -16,6 +16,7 @@ spec:
     syncOptions:
       - Validate=false
       - ApplyOutOfSyncOnly=true
+      - CreateNamespace=true
     retry:
       limit: 2
       backoff:
