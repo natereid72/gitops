@@ -3,7 +3,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
   name: aks-cluster
-  namespace: dev
 spec:
   destination:
     server: https://kubernetes.default.svc
@@ -16,7 +15,6 @@ spec:
     syncOptions:
       - Validate=false
       - ApplyOutOfSyncOnly=true
-      - CreateNamespace=true
     retry:
       limit: 2
       backoff:
